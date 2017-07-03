@@ -4,6 +4,7 @@ import Order from './Order'
 import Inventory from './Inventory'
 import Fish from './Fish'
 
+import base from '../base'
 import fishes from '../sample-fishes'
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
     this.addFish = this.addFish.bind(this)
     this.loadSamples = this.loadSamples.bind(this)
     this.addToOrder = this.addToOrder.bind(this)
+
     this.state = {
       fishes: {},
       order: {}
